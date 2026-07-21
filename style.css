@@ -23,9 +23,8 @@ header {
     z-index: 100;
 }
 
-/* Ajuste da Logo Imagem */
 .logo-img {
-    height: 60px; /* Tamanho proporcional para a barra superior */
+    height: 60px;
     width: auto;
     display: block;
 }
@@ -88,6 +87,60 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
+/* ESTILOS DA GALERIA */
+.gallery-section {
+    padding: 4rem 5%;
+    text-align: center;
+    background-color: #F7FAFC;
+}
+
+.gallery-section h2 {
+    color: #1A5336;
+    font-size: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-info {
+    padding: 1rem;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-top: 3px solid #DD6B20;
+}
+
+.gallery-info span {
+    font-weight: 700;
+    color: #1A5336;
+    font-size: 0.95rem;
+}
+
+/* HISTÓRIA E DIFERENCIAIS */
 .about {
     padding: 4rem 1rem;
     background-color: #FFFFFF;
